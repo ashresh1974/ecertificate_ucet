@@ -1,0 +1,45 @@
+:root {
+  --primary-color: #764fd0; /* A deep purple */
+  --secondary-color: #330c9d; /* A lighter purple/violet */
+  --text-color: #ffffff;
+  --input-bg-color: rgba(255, 255, 255, 0.15);
+  --glass-bg-color: rgba(255, 255, 255, 0.2);
+  --error-color: #ff4d4f; /* Red for errors */
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Poppins', sans-serif; /* Assumes local Poppins is available */
+  background-color: var(--primary-color);
+  color: var(--text-color);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url('./assets/bg.png');
+  /*background-image: radial-gradient(circle at 10% 20%, rgba(203, 172, 230, 0.1) 0%, rgba(203, 172, 230, 0.05) 90%), radial-gradient(circle at 90% 80%, rgba(203, 172, 230, 0.1) 0%, rgba(203, 172, 230, 0.05) 90%);
+  */
+  background-size: cover;
+  background-position: center;
+}
+
+#root {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 50px;
+}
+
+h1 {
+  font-size: 3rem;
+  font-weight: 600;
+  margin-bottom: 40px;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+

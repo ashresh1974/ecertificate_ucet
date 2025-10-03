@@ -1,0 +1,160 @@
+.login-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.login-box {
+  background: var(--glass-bg-color);
+  -webkit-backdrop-filter: blur(15px);
+  backdrop-filter: blur(15px);
+  border-radius: 20px;
+  border: 1px solid #ffffffa4;
+  padding: 40px 50px;
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.3);
+  width: 100%;
+  max-width: 450px;
+  text-align: center;
+}
+
+.login-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 30px;
+  color: var(--text-color);
+  letter-spacing: 2px;
+}
+
+/* --- Input Fields --- */
+.input-group {
+  display: flex;
+  align-items: center;
+  background: var(--input-bg-color);
+  border-radius: 10px;
+  margin-bottom: 5px; /* Reduced margin to make space for error text */
+  padding: 0 15px;
+  height: 55px;
+}
+
+.input-icon {
+  color: var(--text-color);
+  font-size: 1.2rem;
+  margin-right: 15px;
+  display: flex; 
+  align-items: center;
+}
+
+.input-group input {
+  flex-grow: 1;
+  border: none;
+  background: transparent;
+  color: var(--text-color);
+  font-size: 1rem;
+  height: 100%;
+  outline: none;
+}
+
+.input-group input::placeholder {
+  color: #ffffffc8;
+  font-weight: 300;
+}
+
+/* --- Error Messages (Requirement: Red text below input boxes) --- */
+.error-text {
+  color: var(--error-color); /* Red text */
+  font-size: 0.85rem;
+  font-weight: 500;
+  text-align: right;
+  margin-bottom: 20px; /* Space between error and next element */
+  margin-top: 5px;
+  padding-left: 20px; /* Align with input field start */
+}
+
+/* Specific spacing for the last error/input group before the button */
+.error-text:last-of-type {
+    margin-bottom: 10px;
+}
+
+/* --- Forgot Password --- */
+.forgot-password-container {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 10px;
+}
+
+.forgot-password {
+  color: rgba(255, 255, 255, 0.8);
+  text-decoration: none;
+  font-size: 0.9rem;
+  transition: color 0.3s;
+}
+
+.forgot-password:hover {
+  color: var(--secondary-color);
+  text-decoration: underline;
+}
+
+/* --- Login Button --- */
+.login-button {
+  width: 100%;
+  padding: 15px;
+  background-color: var(--secondary-color);
+  border: none;
+  border-radius: 10px;
+  color: var(--text-color);
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.1s;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  margin-top: 20px;
+}
+
+.login-button:hover:not(:disabled) {
+  background-color: #926bff;
+}
+
+.login-button:active:not(:disabled) {
+  transform: scale(0.98);
+}
+
+.login-button:disabled {
+    background-color: rgba(127, 82, 255, 0.6);
+    cursor: not-allowed;
+}
+
+/* --- Register Link --- */
+.register-text {
+  margin-top: 30px;
+  font-size: 0.95rem;
+  font-weight: 300;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.register-link {
+  color: var(--text-color);
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s;
+}
+
+.register-link:hover {
+  color: var(--secondary-color);
+}
+
+/* Add this to your Login.css */
+
+.password-toggle-icon {
+    color: var(--text-color);
+    font-size: 1.1rem;
+    margin-left: 10px;
+    cursor: pointer;
+    opacity: 0.8;
+    transition: opacity 0.2s;
+}
+
+.password-toggle-icon:hover {
+    opacity: 1;
+}
+
